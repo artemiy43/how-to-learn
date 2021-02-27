@@ -36,7 +36,8 @@
 
 .header__title {
   width: 730px;
-  margin-left: 64px;
+  padding: 0;
+  margin: 0 0 0 64px;
   align-self: center;
   z-index: 2;
   position: relative;
@@ -47,6 +48,8 @@
 } /*Заголовок хедера */
 
 .header__subtitle {
+  padding: 0;
+  margin: 0;
   z-index: 2;
   position: absolute;
   width: 388px;
@@ -60,6 +63,7 @@
 
 .header__link {
   color: #2f80ed;
+  text-decoration: none;
 } /*цвет для ссылки */
 
 .header__main-illustration {
@@ -84,14 +88,16 @@
   padding-top: 100px;
 } /*Блок дискрипшин, отступ */
 
-.description__two-colums {
+.two-colums {
   width: 80%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
 } /*блок с двумя колонками в дискрипшин */
 
-.description__two-colums_brief {
+.two-colums__brief {
+  padding: 0;
+  margin: 0;
   width: 175px;
   color:#2f80ed;
   line-height: 1.2;
@@ -99,20 +105,31 @@
   font-weight: normal;
 } /*текст в первой колонке */
 
-.description__two-colums_main-text {
+.two-colums__main-text {
   min-width: 784px;
   width: 80%;
 } /*основной текст во второй колонке, ширина */
 
-.description__two-colums_paragraph {
+.two-colums__paragraph {
+  margin: 0;
+  padding-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   color: #000;
 } /*свойства для основного текста в колонке */
 
-.description__two-colums_span-accent {
+.two-colums__paragraph:last-of-type {
+  padding-bottom: 0;
+}
+
+.two-colums__span-accent {
+  margin: 0;
+  padding-bottom: 30px;
+  line-height: 34px;
+  font-size: 24px;
   font-weight: bold;
+  color: #000;
 } /*выделение слова Вывод */
 
 .digits {
@@ -121,33 +138,35 @@
   text-align: center;
 } /*отступы для блока Цифры */
 
-.section_title {
+.section-title {
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   color: #000;
   margin: 0 auto 20px;
+  z-index: 2;
 } /*свойства для заголовка */
 
-.section_title_theme_dark {
+.section-title_theme_dark {
   color: white;
 } /*модификатор заголовка в значении dark */
 
-.section_subtitle {
+.section-subtitle {
   width: 60%;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   color: #000;
   margin: 0 auto;
+  z-index: 2;
 } /*свойства для подзаголовка */
 
-.section_subtitle_theme_dark {
+.section-subtitle_theme_dark {
   color: white;
 } /*модификатор подзаголовка в значении dark */
 
-.digits_table {
+.table {
   width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -168,7 +187,7 @@
   margin-top: 80px;
 }/*ячейка таблицы для другого блока в значении dark */
 
-.table__cell_heading {
+.table__heading {
   margin: 0;
   text-align: left;
   line-height: 1.15;
@@ -176,12 +195,13 @@
   font-weight: bold;
 } /*заголовок в ячейке */
 
-.table__cell_text {
+.table__text {
   text-align: left;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
+  margin-bottom: 0;
 } /*текст в ячейке */
 
 .feynman {
@@ -189,7 +209,7 @@
   display: flex;
   position: relative;
   text-align: center;
-  height: 790px;
+  min-height: 790px;
   flex-wrap: wrap;
   flex-direction: column;
   background-color: #f2f2f2;
@@ -249,7 +269,7 @@
   position: relative;
 }/*блок Кауфман*/
 
-.kaufman_table {
+.table {
   width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -274,6 +294,7 @@
 }/*треугольник блока Кауфман*/
 
 .footer {
+  box-sizing: border-box;
   min-height: 350px;
   background-color: #1f1f1f;
   color: white;
@@ -283,22 +304,21 @@
 }/*подвал сайта, footer*/
 
 .footer__columns {
-  min-height: 350px;
+  min-height: 250px;
   display: flex;
   justify-content: space-between;
   width: 90%;
   margin: auto;
 } /*колонки подвала сайта, footer*/
 
-.footer__column_copyright {
+.footer__column_content_copyright {
   flex-basis: 711px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 } /*первая колонка подвала сайта, footer*/
 
-.footer__column_author {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.footer__author {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -335,4 +355,5 @@
 .social-icon {
   width: 16px;
   height: 16px;
+  margin-right: 10px;
 } /*иконка ссылки, footer*/
