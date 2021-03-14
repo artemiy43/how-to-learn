@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="pages/index.css">
   <link rel="stylesheet" href="styles/style.css">
   <title>Научиться учиться</title>
 </head>
@@ -14,25 +14,88 @@
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link" href="#link">Узнать&rarr;</a></p>
       <img class="header__main-illustration" src="images/header-image.png" alt="Здесь картинка">
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
     <main class="content">
       <section class="description">
-        <article class="two-colums">
-          <h2 class="two-colums__brief">Главные проблемы обучения</h2>
-          <div class="two-colums__main-text">
-            <p class="two-colums__paragraph">
+        <article class="two-columns">
+          <h2 class="two-columns__brief">Главные проблемы обучения</h2>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">
               Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.
             </p>
-            <p class="two-colums__paragraph">
-              <span class="two-colums__span-accent">Вывод:</span>
+            <p class="two-columns__paragraph">
+              <span class="two-columns__span-accent">Вывод:</span>
               учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
             </p>
-            <p class="two-colums__paragraph">
+            <p class="two-columns__paragraph">
               Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.
             </p>
           </div>
         </article>
+      </section>
+
+      <section class="techniques">
+        <h2 class="section-title">Техники обучения</h2>
+        <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+        <div class="cards">
+          <div class="cards__item">
+            <img class="cards__image" src="images/cards-attention.png" alt="card_attention">
+            <h2 class="cards__title">Два вида внимания</h2>
+            <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
+          </div>
+          <div class="cards__item">
+            <img class="cards__image" src="images/cards-recall.png" alt="card-recall">
+            <h2 class="cards__title">Recall</h2>
+            <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
+          </div>
+          <div class="cards__item">
+            <img class="cards__image" src="images/cards-interliving.png" alt="card-interliving">
+            <h2 class="cards__title">Интерливинг</h2>
+            <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+          </div>
+          <div class="cards__item">
+            <img class="cards__image" src="images/cards-question.png" alt="card-question">
+            <h2 class="cards__title">Вопросы</h2>
+            <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+          </div>
+          <div class="cards__item">
+            <img class="cards__image" src="images/cards-competence.png" alt="card-competence">
+            <h2 class="cards__title">Иллюзия компетентности</h2>
+            <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
+          </div>
+          <div class="cards__item"></div>
+        </div>
+      </section>
+
+      <section class="video">
+        <h2 class="section-title">Видео на TED</h2>
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+        <div class="video__iframes">
+          <iframe class="video__iframe" width="515" height="316"
+          src="https://www.youtube.com/embed/arj7oStGLkU"
+          allowfullscreen></iframe>
+          <iframe class="video__iframe" width="515" height="316"
+          src="https://www.youtube.com/embed/5MgBikgcWnY"
+          allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="oakley">
+        <article class="two-columns">
+          <h2 class="two-columns__brief">История Барбары Оакли</h2>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">
+              С детства Барбаре не давалась математика. Она считала себя законченным гуманитарием, причём далеко не самым умным. В армии она изучала русский язык, чтобы получить надбавку, да так успешно, что её выдвинули в командиры. Но для продвижения по службе нужно было сдавать математику. И тогда Барбара придумала свой подход к точным наукам. Оказалось, если вам что-то «плохо даётся», ваши добытые трудом знания гораздо глубже, чем у тех, кому всё ясно с первого взгляда.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="feynman">
+        <h2 class="feynman__title">Метод Фейнмана</h2>
+        <p class="feynman__subtitle">Выучить и не забыть.</p>
+        <a class="feynman__link" href="https://ideanomics.ru/articles/7981" target="_blank">Подробнее&rarr;</a>
       </section>
 
       <section class="digits">
@@ -76,10 +139,18 @@
         </div>
       </section>
 
-      <section class="feynman">
-        <h2 class="feynman__title">Метод Фейнмана</h2>
-        <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a class="feynman__link" href="https://ideanomics.ru/articles/7981" target="_blank">Подробнее&rarr;</a>
+      <section class="khan">
+        <div class="khan__container">
+          <p class="khan__author">Салман Хан</p>
+          <h2 class="khan__title">Весь мир — школа</h2>
+          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+          <p class="khan__quote-author">Джордж Лукас</p>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+          <div class="khan__book-container">
+            <div class="khan__book-pic"></div>
+            <a class="khan__buy-link" href ="https://www.labirint.ru/books/483575/" target="_blank">Купить книгу&rarr;</a>
+          </div>
+        </div>
       </section>
 
       <section id="link" class="kaufman">
@@ -127,7 +198,18 @@
             <p class="table__text">Уделяйте внимание количеству и скорости.</p>
           </div>
         </div>
-        <div class="kaufman__triangle">
+        <div class="kaufman__triangle rotation">
+        </div>
+      </section>
+
+      <section class="resources">
+        <h2 class="section-title">Полезные ресурсы</h2>
+        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+        <div class="resources__logo-zone">
+          <a class="resources__logo resources__logo_arzamas" href="https://arzamas.academy/" target="_blank"></a>
+          <a class="resources__logo resources__logo_n1" href="https://nplus1.ru/" target="_blank"></a>
+          <a class="resources__logo resources__logo_strelka" href="https://strelka.com/ru" target="_blank"></a>
+          <a class="resources__logo resources__logo_polka" href="https://polka.academy/" target="_blank"></a>
         </div>
       </section>
     </main>
