@@ -2,4 +2,10 @@
   width: 183px;
   background-repeat: no-repeat;
   z-index: 1;
+  opacity: 1;
+  transition: opacity 1s linear;
 } /*Лого */
+
+.logo:hover {
+  opacity: .5;
+}
